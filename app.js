@@ -8,9 +8,26 @@ function clearDisplay() {
 }
 
 function calculateResult() {
- const display = document.getElementById('display');
- display.value = eval(display.value);
+
+ const screen = document.getElementById('display');
+ screen.value = eval(display.value);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -26,7 +43,7 @@ function calculateResult() {
 /*
 
 let currentDisplay = "0"; //current display
-let resultDisplay = false; //flag to track whether the result is displayed
+
 
 //! updating the display
 
@@ -57,17 +74,7 @@ function addToDisplay(value){
 //! calculate the result
 
 function calculateResult(){
- try{
-  const result = eval(currentDisplay);
-  currentDisplay += "\n=" + result.toString( );
-  updateDisplay();
- }
- catch (error) {
-  currentDisplay += "\nError";
-  updateDisplay();
- }
-
- resultDisplay = true;
+ 
 }
 
 
