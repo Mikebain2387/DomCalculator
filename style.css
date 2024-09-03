@@ -1,0 +1,82 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+background-image: url("./images/pexels-felixmittermeier-956981.jpg");
+background-size: cover;
+height: 100%;
+width: 100%;
+}
+
+.calculator{
+ background: rgba(30, 143, 255, 0.669);
+ border: 2px solid white;
+ box-shadow: 1px 1px 15px 0px white;
+ border-radius: 20px;
+
+ 
+ 
+}
+
+.display{
+ width: 100%;
+ border-radius: 15px;
+ margin-top: 20px;
+ font-size: 45px;
+ height: 100px;
+ border: none;
+ background-color: rgba(0, 0, 0, 0.235);
+ color: rgb(255, 255, 255);
+ text-align: right;
+ padding-top: 20px;
+ padding-right: 20px;
+ padding-left: 10px;
+ white-space: nowrap;
+
+}
+
+button{
+ height: 60px;
+ border: 1px solid rgb(255, 255, 255);
+ background-color: rgba(0, 0, 0, 0.3);
+ 
+}
+
+.numBtn, .mathButton{
+ color: rgb(255, 255, 255);
+ font-size: 30px;
+ border-radius: 15px;
+}
+
+button:hover{
+ background-color: rgba(41, 91, 177, 0.4);
+}
+
+button:active{
+ transform: scale(.98);
+ 
+}
+
+.clear:hover{
+ background: rgba(241, 115, 119, 0.4);
+}
+
+.equal-sign{
+ height: 100%;
+ grid-area: 2 / 4/ 6 /5;
+
+}
+
+.equal-sign:hover{
+ background: rgba(78, 159, 212, 0.4);
+}
+
+.buttons{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ grid-gap: 10px;
+ padding: 10px;
+}
